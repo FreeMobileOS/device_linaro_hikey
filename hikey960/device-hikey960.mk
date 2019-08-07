@@ -42,3 +42,5 @@ PRODUCT_PACKAGES += sensors.hikey960
 
 # Include vendor binaries
 $(call inherit-product-if-exists, vendor/linaro/hikey960/device-vendor.mk)
+
+$(call inherit-product-if-exists, vendor/fmo/config.mk)

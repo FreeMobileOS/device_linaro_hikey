@@ -14,3 +14,7 @@ $(LOCAL_DIR)/hikey.mk \
 $(LOCAL_DIR)/hikey32.mk \
 $(LOCAL_DIR)/hikey64_only.mk \
 $(LOCAL_DIR)/hikey960.mk
+
+# Inherit fmo configuration
+$(call inherit-product-if-exists, vendor/fmo/config.mk)
+
